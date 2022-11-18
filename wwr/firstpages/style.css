@@ -1,0 +1,505 @@
+body{
+    background-color: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+#content {
+    
+    margin: 0 auto;
+}
+#logo-link{
+   
+    justify-self: center;
+    align-self: center;
+}
+
+#logo-link img{
+    width: 100px;
+    height: 100px;
+}
+.logo{
+    
+    margin-left: 15px;
+}
+/*header - the logo and the navigation are in
+a grid container, the header that holds both of them*/
+header{
+    background-color:#111213 ;
+    display: grid;
+    grid-template-columns: 150px auto;
+    /* Let the first column take 150px while
+    the second column takes the remaining of the 
+    space with auto*/
+    height: 110px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+nav a{
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover{
+    background-color:#892304 ;
+    color:#ffffff ;
+    
+}
+
+/*THE HERO CSS DECLARATION STARTS HERE*/
+
+/*This hero selector and attributes puts the section id=hero-img
+over the hero image*/
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+
+#hero-msg h1, #hero-msg h4{  /*centers the hero messages */
+    text-align: center;
+ 
+    
+}
+#hero-msg h1{
+    font-size: 70px;
+}
+#hero-msg h4{
+    font-size: 30px;
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #ffffff;
+    margin-top: 200px;
+    
+    
+}
+
+/*There is no need to specify height for the hero. The
+grid system fixes the height because of where you specify
+the image to occupy or span*/
+#hero-img{
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 1/3;
+   
+}
+#hero-box{   /*hero img occupies span across 4 column and 2 rows*/
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    /*This spans the div across the entire 
+    grid and rows.It seems as if the header
+     disappeared. That's because the hero image 
+     has overlapped it. Set a z-index of -1 
+     to the #hero-box to send it back
+      a layer on the z-axis*/
+}
+/*THE HERO CSS DECLARATION ENDS HERE*/
+.write-up{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: bold;
+    color: #892304;
+}
+/*THE MAIN CSS DECLARATION STARTS HERE*/
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 10px;
+   
+    
+}
+main section{
+    text-align: center; /*centers the cards (images) equally*/
+}
+.home-grid img{
+    width: 400px;
+    padding-top: 100px;
+}
+.home-grid section{
+    align-content: center;
+    margin-left: 25px;
+}
+.card-img {
+    transition: transform .5s;
+}
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.fourth, .fifth{
+    margin:50px auto ;
+    text-align: center;
+    
+}
+.fourth h3 {
+    color: #892304;
+    
+}
+.fifth h3 {
+    color: #892304;
+}
+.fourth p{
+    color: #e9e9e9;
+    font-style: italic;
+    font-size: 14px;
+   margin-left: 100px;
+   margin-right: 100px;
+    
+}
+.fifth p{
+    color: #e9e9e9;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 100px;
+   margin-right: 100px;
+}
+.fourth-card:hover{
+    animation: shake 0.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .fifth-card:hover{
+    animation: shake 0.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+/*THE MAIN CSS DECLARATION ENDS HERE*/
+#testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.fourth{
+    grid-column: 1;
+}
+.fifth{
+    grid-column: 2/3;
+}
+.test{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    text-shadow: #747474;
+    color: #e9e9e9;
+    font-size: 45px;
+}
+
+.background{
+    background-color: #747474
+}
+
+
+
+footer{
+    background-color: #111213;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    padding: 50px 50px;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows:1fr 1fr 1fr;
+    margin-top: 0px;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+footer a:hover{
+    color: #892304;
+}
+footer p{
+    color: #ffffff;
+    font-size: medium;
+}
+
+.copyright p{
+    color: #ffffff;
+    font-size: 12px;
+   
+}
+
+
+footer .faq{
+    grid-column: 1;
+    color: #e9e9e9;
+}
+footer .services{
+    grid-column: 1/2;
+}
+footer .contact{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+footer .site_plan{
+    grid-column: 2/3;
+}
+footer .copyright{
+    grid-column: 2/3;
+    grid-row: 3;
+    text-align: center;
+       
+}
+
+footer .social_media img{
+    height: 50px;
+    
+}
+footer .social_media{
+    grid-column: 3;
+    padding-left: 20px;
+    grid-row: 2;
+    
+}
+
+
+
+
+.header-back{
+    background-color: #747474;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.header-back p{
+    font-size:15px;
+}
+
+/*Contact CSS Declaration*/
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.office-image img{
+    grid-column: 1/2;
+    width: 400px;
+    margin: 100px 100px 0 50px;
+}
+
+.opening-hours {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -200px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+.opening-hours p{
+    font-size: 15px;
+}
+.form{
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-self: right;
+    margin-top: 70px;
+    width: 1000px;
+    margin-right: -250px;
+}
+#fname, #lname,#subject,#country {
+    width: 600px;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #747474;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #892304;
+  }
+  
+  /* Style the container/contact section */
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+
+  /*ABOUT US CSS*/
+  html {
+    box-sizing: border-box;
+  }
+   .about-us{
+    margin: 50px 0 100px 0;
+   }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+
+  /*SERVCIES CSS DECLARATION*/
+  .services-grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    margin-right: 50px;
+   
+  }
+  .services-grid img{
+   width: 500px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  .services-grid p{
+    padding-bottom: 100px;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  /*FREQUENTLY ASKED QUESTIONS CSS*/
+  .faq-main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .faq-main p{
+    font-size: 18px;
+  }
+  .faq-main li{
+    margin-bottom: 50px;
+    list-style-type: none;
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .services-grid {
+      width: 100%;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    #hero,#testimonial, .home-grid, header{
+        display: block;
+        height: auto;
+    }
+    #testimonial {
+        padding-bottom: 30px;
+    }
+    nav a{
+        display: block;
+    }
+    #hero{
+        margin-top: 0;
+    }
+    #hero-msg{
+        margin-top: 0;
+    }
+    #hero-msg h4{  /*On a smaller screen, do not display the hero messages h1 and h4*/
+        display: none;
+    }
+    .first-card, .second-card, .third-card{
+        margin: 50px auto;
+        width: 60%;
+    }
+   
+}

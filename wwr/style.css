@@ -21,7 +21,8 @@ and not relative to the entire first row*/
 #logo_link {
     padding-top: 5px;
     justify-self: center;
-    align-self: center;}
+    align-self: center;
+  }
 .logo {
     border-radius: 50%;
 }
