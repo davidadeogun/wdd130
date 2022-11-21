@@ -491,6 +491,7 @@ input[type=text], select, textarea {
     nav a{
         display: block;
     }
+ 
     #hero{
         margin-top: 0;
     }
@@ -504,15 +505,19 @@ input[type=text], select, textarea {
         margin: 50px auto;
         width: 60%;
     }
+  
    
 }
 
 @media screen and (max-width: 650px){
-    footer, header{
+     footer, header nav, header{
         display: block;
         text-align: center;
+        
     }
+
 }
+
 @media screen and (max-width: 650px){
     .form{
         display: none;
