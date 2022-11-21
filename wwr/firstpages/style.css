@@ -197,6 +197,12 @@ main section{
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
+.fourth-card{
+  width: 450px;
+}
+.fifth-card{
+    width: 450px;
+}
 .fourth{
     grid-column: 1;
 }
@@ -214,7 +220,8 @@ main section{
 }
 
 .background{
-    background-color: #747474
+    background-color: #747474;
+    width:100%
 }
 
 
@@ -305,7 +312,7 @@ footer .social_media{
 .office-image img{
     grid-column: 1/2;
     width: 400px;
-    margin: 100px 100px 0 50px;
+    margin: 50px -100px 0 50px;
 }
 
 .opening-hours {
@@ -322,7 +329,7 @@ footer .social_media{
     grid-column: 2/3;
     grid-row: 1;
     justify-self: right;
-    margin-top: 70px;
+    margin-top: 30px;
     width: 1000px;
     margin-right: -250px;
 }
@@ -435,7 +442,7 @@ input[type=text], select, textarea {
    
   }
   .services-grid img{
-   width: 500px;
+   width: 450px;
     padding-left: 30px;
     padding-right: 40px;
   }
